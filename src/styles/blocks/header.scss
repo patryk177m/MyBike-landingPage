@@ -1,0 +1,32 @@
+.header {
+  background-image: url("../images/mybike/header_bike.jpg");
+  @include picture-position;
+  background-size: cover;
+  min-height: 100vh;
+  @include block-column;
+  justify-content: space-between;
+
+  &__logo {
+
+    &__picture {
+      width: 130px;
+      height: 38px;
+    }
+  }
+}
+
+@media (min-width: 744px) {
+  .header {
+    min-width: 744px;
+    height: 628px;
+    background-image: url("../images/mybike/bicycle_1.svg");
+  }
+}
+
+@media (min-width: 1260px) {
+  .header {
+    min-width: 1260px;
+    height: 711px;
+    background-image: url("../images/mybike/bicycle_1.svg");
+  }
+}

@@ -1,0 +1,98 @@
+.navigation {
+  min-width: 320px;
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  &__logo {
+    background-image: url("../images/mybike/logo.svg");
+    width: 130px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__container {
+    width: 82px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__telephone {
+    background-image: url("../images/mybike/icon_phone.svg");
+    width: 24px;
+    height: 24px;
+  }
+
+  &__menu {
+    background-image: url("../images/mybike/icon_burger_menu.svg");
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 744px) {
+  .navigation {
+    min-width: 744px;
+    height: 128px;
+    padding: 36px 72px;
+
+    &__logo {
+      width: 187px;
+      height: 56px;
+      @include picture-position;
+    }
+
+    &__container {
+      width: 96px;
+      height: 32px;
+    }
+
+    &__telephone {
+      width: 32px;
+      height: 32px;
+      @include picture-position;
+    }
+
+    &__menu {
+      width: 32px;
+      height: 32px;
+      @include picture-position;
+    }
+  }
+}
+
+@media (min-width: 1260px) {
+  .navigation {
+    min-width: 1020px;
+    height: 56px;
+    padding: 36px 120px;
+
+    &__logo {
+      width: 187px;
+      height: 56px;
+      @include picture-position;
+    }
+
+    &__container {
+      width: 96px;
+      height: 32px;
+    }
+
+    &__telephone {
+      width: 32px;
+      height: 32px;
+      @include picture-position;
+    }
+
+    &__menu {
+      width: 32px;
+      height: 32px;
+      @include picture-position;
+    }
+  }
+}
